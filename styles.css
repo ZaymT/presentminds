@@ -1,0 +1,324 @@
+/* --- Color Variables & Reset --- */
+:root {
+    --soft-pink: #fce4ec;       
+    --medium-pink: #f8bbd0;     
+    --deep-pink: #ec407a;       
+    --text-dark: #4a4a4a;       
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(236, 64, 122, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Nunito', sans-serif; 
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif; 
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* --- Navigation --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--deep-pink);
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; /* Added to help with new extra links */
+}
+
+.nav-links a {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--deep-pink);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, var(--soft-pink) 0%, white 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--deep-pink);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Buttons --- */
+.btn {
+    background-color: var(--deep-pink);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    color: var(--deep-pink);
+    font-weight: bold;
+    border-bottom: 2px solid var(--deep-pink);
+}
+
+.btn-outline {
+    border: 2px solid var(--deep-pink);
+    color: var(--deep-pink);
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-outline:hover {
+    background-color: var(--deep-pink);
+    color: white;
+}
+
+/* --- General Section Styles --- */
+.section-container {
+    padding: 4rem 10%;
+    margin: 0 auto;
+}
+
+.pink-bg {
+    background-color: var(--soft-pink);
+    border-radius: 20px;
+    margin: 2rem 5%;
+}
+
+.pink-bg-darker {
+    background-color: var(--medium-pink);
+    border-radius: 20px;
+    margin: 2rem 5%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--deep-pink);
+}
+
+/* --- Split Layouts (Stats & Mission) --- */
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.visual-content {
+    flex: 1;
+}
+
+.placeholder-box {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 2px dashed var(--medium-pink);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-dark);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Team Section --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-color: var(--medium-pink);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: url('https://placehold.co/120x120/f8bbd0/white?text=Img');
+    background-size: cover;
+}
+
+/* --- Volunteer Options --- */
+.volunteer-options {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Opportunities --- */
+.opp-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.opp-item {
+    background-color: var(--soft-pink);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* --- Newsletter --- */
+.newsletter-box {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* --- Gallery --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-placeholder {
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #888;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--soft-pink);
+    margin-top: 4rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--deep-pink);
+    font-weight: bold;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .split-layout { flex-direction: column; }
+    .nav-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; } 
+    .reverse-mobile { flex-direction: column-reverse; }
+}
