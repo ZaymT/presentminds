@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present Minds | Publication & Learning</title>
+    <title>Present Minds | Publication</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -15,6 +15,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
             <li><a href="publication.html">Publication</a></li>
+            <li><a href="learning.html">Learning</a></li> <!-- New Link -->
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="podcast.html">Podcast</a></li>
             <li><a href="petition.html">Petition</a></li>
@@ -22,37 +23,72 @@
         </ul>
     </nav>
 
-    <section class="section-container">
-        <h2>Student Publications</h2>
-        <div class="opp-list">
-            <div class="opp-item">
-                <h4>Research & Analysis</h4>
-                <p>[Placeholder: High-level student work including theoretical proposals, literary analyses, and research reports.]</p>
-            </div>
-            <div class="opp-item">
-                <h4>Competition Spotlights</h4>
-                <p>[Placeholder: Winning competition essays, policy plans, and innovations, including computational neuroscience.]</p>
-            </div>
-        </div>
-    </section>
+    <!-- Striped Background Header -->
+    <header class="journal-header">
+        <p class="journal-subtitle">Student Research Journal</p>
+        <h1>Present Minds Journal</h1>
+    </header>
 
-    <section class="section-container pink-bg">
-        <h2>Online Learning Interface</h2>
-        <div class="split-layout">
-            <div class="text-content">
-                <h3>Fast-Tracked Courses</h3>
-                <p>Khan Academy-style courses with automated certificates upon completion. Includes Curriculum Development, Educator’s Packets, and assessment tools.</p>
-                <br>
-                <h3>Yale Goodlife Wellness Pillars</h3>
-                <p>Units covering: Eat Well, Love Well, Move Well, Mind Well, Rest Well, Save Well, Seek Well, and Work Well. Exploring the molecular mechanisms in the brain during mindfulness practices and how stress impacts neural pathways.</p>
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <input type="text" class="filter-input" placeholder="Search articles...">
+        
+        <select class="filter-select">
+            <option value="">Year Select</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+        </select>
+
+        <select class="filter-select">
+            <option value="">Research Type</option>
+            <option value="theoretical">Theoretical Proposal</option>
+            <option value="literary">Literary Analysis</option>
+            <option value="report">Research Report</option>
+        </select>
+
+        <select class="filter-select">
+            <option value="">Topics</option>
+            <option value="winning">Competition-winning Articles</option>
+            <option value="alzheimers">Alzheimer's Research</option>
+            <option value="comp-neuro">Computational Neuroscience</option>
+        </select>
+
+        <select class="filter-select">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+        </select>
+    </div>
+
+    <!-- Article List -->
+    <main class="article-list">
+        
+        <!-- Article Card 1 -->
+        <article class="article-card">
+            <h2>The Molecular Mechanisms of Mindfulness</h2>
+            <div class="article-meta">
+                <span><strong>Author:</strong> [Student Name]</span>
+                <span><strong>Date:</strong> August 11, 2026</span>
             </div>
-            <div class="visual-content">
-                <div class="placeholder-box">
-                    <span>[Course Interface / Video Placeholder]</span>
-                </div>
+            <p class="article-abstract">
+                Abstract: This paper explores the theoretical implications of mindfulness practices on protein folding and neural pathway resilience in early-stage neurodegenerative diseases. By analyzing current literature, we propose a computational model to track stress-induced neural changes...
+            </p>
+            <a href="#" class="btn-pdf">Open PDF</a>
+        </article>
+
+        <!-- Article Card 2 -->
+        <article class="article-card">
+            <h2>Addressing the Talent Shortage in Neuroscience</h2>
+            <div class="article-meta">
+                <span><strong>Author:</strong> [Student Name]</span>
+                <span><strong>Date:</strong> July 25, 2026</span>
             </div>
-        </div>
-    </section>
+            <p class="article-abstract">
+                Abstract: A comprehensive literary analysis of the "Lost Einsteins" phenomenon and its direct correlation to the 118-year gender gap in STEM fields. This award-winning policy plan outlines actionable steps for high schools to implement standardized AP Neuroscience curriculums...
+            </p>
+            <a href="#" class="btn-pdf">Open PDF</a>
+        </article>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 Present Minds. All Rights Reserved.</p>
