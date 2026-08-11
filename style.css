@@ -59,7 +59,7 @@ a {
     list-style: none;
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap; /* Added to help with new extra links */
+    flex-wrap: wrap; 
 }
 
 .nav-links a {
@@ -295,37 +295,8 @@ h2 {
     color: #888;
 }
 
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--soft-pink);
-    margin-top: 4rem;
-}
-
-.footer-links {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.footer-links a {
-    color: var(--deep-pink);
-    font-weight: bold;
-}
-
-/* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
-    .split-layout { flex-direction: column; }
-    .nav-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; } 
-    .reverse-mobile { flex-direction: column-reverse; }
-}
-
 /* --- Journal & Publications Layout --- */
 .journal-header {
-    /* Subtle diagonal stripe background */
     background: repeating-linear-gradient(
         45deg,
         var(--soft-pink),
@@ -443,4 +414,32 @@ footer {
 .btn-pdf:hover {
     background-color: var(--text-dark);
     color: var(--white);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--soft-pink);
+    margin-top: 4rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--deep-pink);
+    font-weight: bold;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .split-layout { flex-direction: column; }
+    .nav-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; } 
+    .reverse-mobile { flex-direction: column-reverse; }
 }
