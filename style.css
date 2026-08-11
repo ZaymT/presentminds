@@ -322,3 +322,125 @@ footer {
     .nav-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; } 
     .reverse-mobile { flex-direction: column-reverse; }
 }
+
+/* --- Journal & Publications Layout --- */
+.journal-header {
+    /* Subtle diagonal stripe background */
+    background: repeating-linear-gradient(
+        45deg,
+        var(--soft-pink),
+        var(--soft-pink) 15px,
+        var(--white) 15px,
+        var(--white) 30px
+    );
+    padding: 4rem 10%;
+    text-align: center;
+    border-bottom: 2px solid var(--medium-pink);
+}
+
+.journal-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.journal-header h1 {
+    font-size: 3.5rem;
+    color: var(--deep-pink);
+}
+
+/* --- Filter Bar --- */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin: -2rem 10% 3rem 10%;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-input, .filter-select {
+    padding: 10px 15px;
+    border: 1px solid var(--medium-pink);
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+.filter-input {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+/* --- Article Cards --- */
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10% 4rem 10%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.article-card {
+    background-color: var(--white);
+    border: 1px solid var(--soft-pink);
+    border-left: 5px solid var(--deep-pink);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.article-card h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.article-abstract {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.btn-pdf {
+    background-color: transparent;
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+    padding: 8px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-pdf:hover {
+    background-color: var(--text-dark);
+    color: var(--white);
+}
