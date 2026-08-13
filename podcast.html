@@ -7,24 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: var(--soft-pink);">
-    
-    <nav class="navbar">
-       <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px;">
-    <img src="Present Minds Logo_2.png" alt="Present Minds Brain Logo" style="height: 45px; width: auto; object-fit: contain;">
-    Present Minds
-</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="newsletter.html">Newsletter</a></li>
-            <li><a href="publication.html">Publication</a></li>
-            <li><a href="learning.html">Learning</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="podcast.html">Podcast</a></li>
-            <li><a href="petition.html">Petition</a></li>
-            <li><a href="opportunities.html">Opportunities</a></li>
-        </ul>
-    </nav>
+<body class="bg-light-pink">
+
+    <div id="nav-placeholder"></div>
 
     <section class="section-container">
         <h2>Our Podcast & Interviews</h2>
@@ -68,12 +53,15 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Present Minds. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="#">Instagram</a>
-            <a href="#">Email Us</a>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('navbar.html').then(response => response.text()).then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+        fetch('footer.html').then(response => response.text()).then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
 </body>
 </html>
