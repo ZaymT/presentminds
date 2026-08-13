@@ -53,14 +53,10 @@ a {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 65px; /* You can change this number to make the logo bigger or smaller */
-    width: auto;
-    object-fit: contain;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--deep-pink);
+    font-family: 'Playfair Display', serif;
 }
 
 .nav-links {
@@ -165,7 +161,7 @@ h2 {
     color: var(--deep-pink);
 }
 
-/* --- Split Layouts (Stats & Mission) --- */
+/* --- Split Layouts --- */
 .split-layout {
     display: flex;
     align-items: center;
@@ -424,7 +420,7 @@ h2 {
     color: var(--white);
 }
 
-/* --- Stacked Cards (Volunteer & Petition Links) --- */
+/* --- Stacked Cards --- */
 .stacked-container {
     max-width: 900px;
     margin: 0 auto;
